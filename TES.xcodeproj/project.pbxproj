@@ -22,6 +22,9 @@
 		20C8B313198764CC00E56E09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C8B2F2198764CC00E56E09 /* UIKit.framework */; };
 		20C8B31B198764CC00E56E09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20C8B319198764CC00E56E09 /* InfoPlist.strings */; };
 		20C8B31D198764CC00E56E09 /* TESTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C8B31C198764CC00E56E09 /* TESTests.m */; };
+		20C8B327198766C400E56E09 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C8B326198766C400E56E09 /* CoreText.framework */; };
+		20C8B32819877D1400E56E09 /* TESTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20C8B318198764CC00E56E09 /* TESTests-Info.plist */; };
+		20C8B32B19878AE400E56E09 /* DBLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C8B32A19878AE400E56E09 /* DBLSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		20C8B318198764CC00E56E09 /* TESTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TESTests-Info.plist"; sourceTree = "<group>"; };
 		20C8B31A198764CC00E56E09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		20C8B31C198764CC00E56E09 /* TESTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TESTests.m; sourceTree = "<group>"; };
+		20C8B326198766C400E56E09 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		20C8B32919878AE400E56E09 /* DBLSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLSecondViewController.h; sourceTree = "<group>"; };
+		20C8B32A19878AE400E56E09 /* DBLSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C8B327198766C400E56E09 /* CoreText.framework in Frameworks */,
 				20C8B2F1198764CC00E56E09 /* CoreGraphics.framework in Frameworks */,
 				20C8B2F3198764CC00E56E09 /* UIKit.framework in Frameworks */,
 				20C8B2EF198764CC00E56E09 /* Foundation.framework in Frameworks */,
@@ -103,6 +110,7 @@
 		20C8B2ED198764CC00E56E09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				20C8B326198766C400E56E09 /* CoreText.framework */,
 				20C8B2EE198764CC00E56E09 /* Foundation.framework */,
 				20C8B2F0198764CC00E56E09 /* CoreGraphics.framework */,
 				20C8B2F2198764CC00E56E09 /* UIKit.framework */,
@@ -120,6 +128,8 @@
 				20C8B303198764CC00E56E09 /* Main_iPad.storyboard */,
 				20C8B306198764CC00E56E09 /* DBLViewController.h */,
 				20C8B307198764CC00E56E09 /* DBLViewController.m */,
+				20C8B32919878AE400E56E09 /* DBLSecondViewController.h */,
+				20C8B32A19878AE400E56E09 /* DBLSecondViewController.m */,
 				20C8B309198764CC00E56E09 /* Images.xcassets */,
 				20C8B2F5198764CC00E56E09 /* Supporting Files */,
 			);
@@ -203,6 +213,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "doublw inc.";
 				TargetAttributes = {
+					20C8B2EA198764CC00E56E09 = {
+						DevelopmentTeam = EP4TP9J825;
+					};
 					20C8B30E198764CC00E56E09 = {
 						TestTargetID = 20C8B2EA198764CC00E56E09;
 					};
@@ -232,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C8B32819877D1400E56E09 /* TESTests-Info.plist in Resources */,
 				20C8B305198764CC00E56E09 /* Main_iPad.storyboard in Resources */,
 				20C8B30A198764CC00E56E09 /* Images.xcassets in Resources */,
 				20C8B302198764CC00E56E09 /* Main_iPhone.storyboard in Resources */,
@@ -255,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20C8B2FB198764CC00E56E09 /* main.m in Sources */,
+				20C8B32B19878AE400E56E09 /* DBLSecondViewController.m in Sources */,
 				20C8B308198764CC00E56E09 /* DBLViewController.m in Sources */,
 				20C8B2FF198764CC00E56E09 /* DBLAppDelegate.m in Sources */,
 			);
@@ -391,10 +406,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hisaaki Hangai (4ZE78RTVZU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TES/TES-Prefix.pch";
 				INFOPLIST_FILE = "TES/TES-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,10 +422,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hisaaki Hangai (4ZE78RTVZU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TES/TES-Prefix.pch";
 				INFOPLIST_FILE = "TES/TES-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -10,6 +10,8 @@
 
 @interface DBLSecondViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
 @end
 
 @implementation DBLSecondViewController
@@ -27,6 +29,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    self.label.font = [UIFont fontWithName:@"HiraMaruProN-W4" size:30.0f];
 }
 
 - (void)didReceiveMemoryWarning
