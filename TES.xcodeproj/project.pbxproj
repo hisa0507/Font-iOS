@@ -25,6 +25,7 @@
 		20C8B327198766C400E56E09 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C8B326198766C400E56E09 /* CoreText.framework */; };
 		20C8B32819877D1400E56E09 /* TESTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20C8B318198764CC00E56E09 /* TESTests-Info.plist */; };
 		20C8B32B19878AE400E56E09 /* DBLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C8B32A19878AE400E56E09 /* DBLSecondViewController.m */; };
+		20C8B32F1988827A00E56E09 /* UIFont+SytemFontOverride.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C8B32E1988827A00E56E09 /* UIFont+SytemFontOverride.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		20C8B326198766C400E56E09 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		20C8B32919878AE400E56E09 /* DBLSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLSecondViewController.h; sourceTree = "<group>"; };
 		20C8B32A19878AE400E56E09 /* DBLSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLSecondViewController.m; sourceTree = "<group>"; };
+		20C8B32D1988827A00E56E09 /* UIFont+SytemFontOverride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+SytemFontOverride.h"; path = "Font/UIFont+SytemFontOverride.h"; sourceTree = "<group>"; };
+		20C8B32E1988827A00E56E09 /* UIFont+SytemFontOverride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+SytemFontOverride.m"; path = "Font/UIFont+SytemFontOverride.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,7 @@
 		20C8B2F4198764CC00E56E09 /* TES */ = {
 			isa = PBXGroup;
 			children = (
+				20C8B32C1988825900E56E09 /* Font */,
 				20C8B2FD198764CC00E56E09 /* DBLAppDelegate.h */,
 				20C8B2FE198764CC00E56E09 /* DBLAppDelegate.m */,
 				20C8B300198764CC00E56E09 /* Main_iPhone.storyboard */,
@@ -163,6 +167,15 @@
 				20C8B319198764CC00E56E09 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20C8B32C1988825900E56E09 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				20C8B32D1988827A00E56E09 /* UIFont+SytemFontOverride.h */,
+				20C8B32E1988827A00E56E09 /* UIFont+SytemFontOverride.m */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20C8B2FB198764CC00E56E09 /* main.m in Sources */,
+				20C8B32F1988827A00E56E09 /* UIFont+SytemFontOverride.m in Sources */,
 				20C8B32B19878AE400E56E09 /* DBLSecondViewController.m in Sources */,
 				20C8B308198764CC00E56E09 /* DBLViewController.m in Sources */,
 				20C8B2FF198764CC00E56E09 /* DBLAppDelegate.m in Sources */,
@@ -492,6 +506,7 @@
 				20C8B322198764CC00E56E09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20C8B323198764CC00E56E09 /* Build configuration list for PBXNativeTarget "TESTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +515,7 @@
 				20C8B325198764CC00E56E09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
