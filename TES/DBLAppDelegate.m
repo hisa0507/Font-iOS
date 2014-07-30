@@ -17,7 +17,7 @@
     // Override point for customization after application launch.
     [self asynchronouslySetFontNameWithBlock:^(NSString *str, NSError *error) {
         if ([str isEqualToString:@"end"]) {
-            [[UILabel appearance] setFont:[UIFont fontWithName:@"HiraMaruProN-W4" size:18.0f]];
+//            [[UILabel appearance] setFont:[UIFont fontWithName:@"HiraMaruProN-W4" size:18.0f]];
             UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:[NSBundle mainBundle]];
             self.window.rootViewController = [storyboard instantiateInitialViewController];
         }
